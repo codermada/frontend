@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="HTML 09 blog page demonstrating links and anchors">
+    <title>HTML 09 Blog</title>
+    <link rel="stylesheet" href="../../CSS/style.css">
+</head>
+<body>
+    <header>
+        <h1>📝 HTML 09 Blog</h1>
+        <p>Tags, links, and paragraph anchors in this section</p>
+        <nav style="display: flex; justify-content: center; gap: 1.5rem; flex-wrap: wrap; margin-top: 1rem;">
+            <a href="index.html" style="color: white; text-decoration: none; font-weight: 600;">Home</a>
+            <a href="blog.html" style="color: white; text-decoration: none; font-weight: 600;">Blog</a>
+            <a href="help.html" style="color: white; text-decoration: none; font-weight: 600;">Help</a>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>HTML Anchor Tags</h2>
+            <div class="animal-card">
+                <h3>Using the <code>&lt;a&gt;</code> tag</h3>
+                <p>Click the link below to jump directly to the paragraph highlighting the usage of the <code>&lt;a&gt;</code> tag:</p>
+                <p><a href="#a-tag-usage" style="color: #667eea; text-decoration: none; font-weight: bold;">Go to the anchor paragraph</a></p>
+            </div>
+        </section>
+
+        <section>
+            <h2>Blog Tags</h2>
+            <div class="animal-card">
+                <h3>Article Tags</h3>
+                <p>Tags are useful for categorization:</p>
+                <p><span style="display:inline-block; background:#667eea; color:white; padding:0.4rem 0.75rem; border-radius:999px; margin-right:0.5rem;">HTML</span><span style="display:inline-block; background:#764ba2; color:white; padding:0.4rem 0.75rem; border-radius:999px; margin-right:0.5rem;">Links</span><span style="display:inline-block; background:#00b894; color:white; padding:0.4rem 0.75rem; border-radius:999px;">Accessibility</span></p>
+            </div>
+        </section>
+
+        <section id="a-tag-usage">
+            <h2>Anchor Paragraph</h2>
+            <div class="animal-card">
+                <h3>Highlighting <code>&lt;a&gt;</code> tag usage</h3>
+                <p>This paragraph demonstrates the use of the <code>&lt;a&gt;</code> tag to create a link. The <code>&lt;a href="#a-tag-usage"&gt;</code> link above jumps directly to this paragraph, showing how anchors and in-page navigation work.</p>
+                <p>Using <code>&lt;a&gt;</code> tags is essential for web navigation, external references, and creating accessible links within your content.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 HTML 09 Blog. All rights reserved.</p>
+    </footer>
+
+    <script src="../../JS/script.js"></script>
+</body>
+</html>
