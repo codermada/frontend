@@ -3,13 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Watch classical music video">
     <link rel="icon" href="pdp.png" type="image/png">
-    <title>Videos</title>
+    <title>Video Player - Classical Music</title>
+    <link rel="stylesheet" href="../../CSS/style.css">
 </head>
 <body>
-    <p>Chopin Nocturne no.8 in Db major op. 27 no. 2</p>
-    <video controls>
-        <source src="video.mp4" type="video/mp4">
-    </video>
+    <header>
+        <h1>🎬 Video Player</h1>
+        <p>Classical Music Video Collection</p>
+    </header>
+
+    <main>
+        <section>
+            <h2>Now Playing</h2>
+
+            <div class="animal-card">
+                <h3>🎵 Chopin Nocturne</h3>
+                <p><strong>Chopin Nocturne no.8 in Db major op. 27 no. 2</strong></p>
+                <video controls style="width: 100%; border-radius: 8px; margin-top: 1rem;">
+                    <source src="video.mp4" type="video/mp4">
+                    Your browser does not support the video element.
+                </video>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Video Collection. All rights reserved.</p>
+    </footer>
+
+    <script src="../../JS/script.js"></script>
 </body>
 </html>

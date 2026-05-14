@@ -3,19 +3,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Test</title>
+    <meta name="description" content="Gallery of images and media content">
+    <title>Media Gallery</title>
+    <link rel="stylesheet" href="../../CSS/style.css">
 </head>
 <body>
-    <div>
-        <a href="/">home</a>
-    </div>
-    <a href="description.html">
-        <img src="panther.jpg" alt="panther">
-    </a>
-    <br>
-    Some anime girl dancing 
-    <a href="animeGirl.html">
-        here
-    </a>.
+    <header>
+        <h1>🖼️ Media Gallery</h1>
+        <p>Explore our collection of images and animations</p>
+    </header>
+
+    <main>
+        <section>
+            <h2>Featured Content</h2>
+
+            <div class="animal-card">
+                <h3>🐆 Panther</h3>
+                <a href="description.html">
+                    <img src="panther.jpg" alt="panther" style="width: 100%; max-width: 300px; border-radius: 8px; cursor: pointer;">
+                </a>
+                <p style="margin-top: 1rem;">
+                    A leopard, especially a black one. Click the image to learn more.
+                </p>
+            </div>
+
+            <div class="animal-card">
+                <h3>🎬 Anime Animation</h3>
+                <p>Check out an anime girl dancing <a href="animeGirl.html" style="color: #667eea; text-decoration: none; font-weight: bold;">here</a>.</p>
+            </div>
+        </section>
+
+        <section>
+            <h2>Navigation</h2>
+            <div class="animal-card">
+                <a href="/" style="color: #667eea; text-decoration: none; font-weight: bold;">🏠 Back to Home</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Media Gallery. All rights reserved.</p>
+    </footer>
+
+    <script src="../../JS/script.js"></script>
 </body>
 </html>

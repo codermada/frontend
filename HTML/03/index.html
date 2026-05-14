@@ -3,13 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Audio</title>
+    <meta name="description" content="Listen to classical music">
+    <title>Audio Player - Classical Music</title>
+    <link rel="stylesheet" href="../../CSS/style.css">
 </head>
 <body>
-    <p>Chopin Nocturne no.8 in Db major op. 27 no. 2</p>
-    <audio controls>
-        <source src="audio.mp3" type="audio/mpeg">
-        <source src="audio.wav" type="audio/wav">
-    </audio>
+    <header>
+        <h1>🎵 Audio Player</h1>
+        <p>Classical Music Collection</p>
+    </header>
+
+    <main>
+        <section>
+            <h2>Now Playing</h2>
+
+            <div class="animal-card">
+                <h3>🎼 Chopin Nocturne</h3>
+                <p><strong>Chopin Nocturne no.8 in Db major op. 27 no. 2</strong></p>
+                <audio controls style="width: 100%; margin-top: 1rem;">
+                    <source src="audio.mp3" type="audio/mpeg">
+                    <source src="audio.wav" type="audio/wav">
+                    Your browser does not support the audio element.
+                </audio>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Music Collection. All rights reserved.</p>
+    </footer>
+
+    <script src="../../JS/script.js"></script>
 </body>
 </html>
