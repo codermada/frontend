@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="HTML 12 demo highlighting header and footer using div containers">
+    <title>Header/Footer with Div</title>
+    <link rel="stylesheet" href="../../CSS/style.css">
+</head>
+<body>
+    <div class="page-header" style="background: rgba(0,0,0,0.8); color: white; padding: 1.5rem 2rem; text-align: center;">
+        <h1>📌 Header Section</h1>
+        <p>This demo uses <code>&lt;div&gt;</code> to represent the page header instead of the semantic <code>&lt;header&gt;</code> tag.</p>
+    </div>
+
+    <main>
+        <section>
+            <h2>Why use a div for header/footer?</h2>
+            <div class="animal-card">
+                <p>Sometimes you want to demonstrate layout using generic containers. In this example, the top banner and bottom banner are both created with <code>&lt;div&gt;</code> elements.</p>
+                <p>The page header is styled as a header but remains a non-semantic container. This is useful for learning the difference between structural tags and generic wrappers.</p>
+            </div>
+        </section>
+
+        <section>
+            <h2>Example content area</h2>
+            <div class="animal-card">
+                <p>Use a <code>&lt;div&gt;</code> to wrap the title and description, while the content itself remains unchanged. The header and footer are still visible and styled like page sections.</p>
+            </div>
+        </section>
+    </main>
+
+    <div class="page-footer" style="background: rgba(0,0,0,0.75); color: white; padding: 1.5rem 2rem; text-align: center; margin-top: 2rem;">
+        <p><strong>Footer Section:</strong> This is a footer demonstration using a <code>&lt;div&gt;</code> container instead of the semantic <code>&lt;footer&gt;</code> tag.</p>
+        <p>Both containers show how generic blocks can still create clear page structure.</p>
+    </div>
+
+    <script src="../../JS/script.js"></script>
+</body>
+</html>
