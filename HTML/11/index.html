@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="HTML form demo showing exhaustive form field usage">
+    <title>HTML Forms Demonstration</title>
+    <link rel="stylesheet" href="../../CSS/style.css">
+</head>
+<body>
+    <header>
+        <h1>📝 HTML Form Fields</h1>
+        <p>Explore every common form field type and how they work together</p>
+    </header>
+
+    <main>
+        <section>
+            <h2>Complete Form Example</h2>
+            <div class="animal-card" style="padding: 2rem;">
+                <form>
+                    <fieldset style="border: 1px solid #ddd; padding: 1.5rem; border-radius: 12px; margin-bottom: 1.5rem;">
+                        <legend style="font-weight: 700; color: #667eea;">Personal Information</legend>
+                        <label for="full-name">Full Name</label><br>
+                        <input id="full-name" type="text" placeholder="Enter your full name" style="width: 100%; padding: 0.8rem; margin: 0.5rem 0 1rem 0; border-radius: 8px; border: 1px solid #ccc;">
+
+                        <label for="email">Email Address</label><br>
+                        <input id="email" type="email" placeholder="name@example.com" style="width: 100%; padding: 0.8rem; margin: 0.5rem 0 1rem 0; border-radius: 8px; border: 1px solid #ccc;">
+
+                        <label for="password">Password</label><br>
+                        <input id="password" type="password" placeholder="********" style="width: 100%; padding: 0.8rem; margin: 0.5rem 0 1rem 0; border-radius: 8px; border: 1px solid #ccc;">
+
+                        <label for="phone">Phone Number</label><br>
+                        <input id="phone" type="tel" placeholder="+1234567890" style="width: 100%; padding: 0.8rem; margin: 0.5rem 0 1rem 0; border-radius: 8px; border: 1px solid #ccc;">
+                    </fieldset>
+
+                    <fieldset style="border: 1px solid #ddd; padding: 1.5rem; border-radius: 12px; margin-bottom: 1.5rem;">
+                        <legend style="font-weight: 700; color: #764ba2;">Date & Time</legend>
+                        <div style="display: grid; gap: 1rem; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));">
+                            <div>
+                                <label for="date">Date</label><br>
+                                <input id="date" type="date" style="width: 100%; padding: 0.8rem; margin-top: 0.5rem; border-radius: 8px; border: 1px solid #ccc;">
+                            </div>
+                            <div>
+                                <label for="time">Time</label><br>
+                                <input id="time" type="time" style="width: 100%; padding: 0.8rem; margin-top: 0.5rem; border-radius: 8px; border: 1px solid #ccc;">
+                            </div>
+                            <div>
+                                <label for="datetime">Date/Time</label><br>
+                                <input id="datetime" type="datetime-local" style="width: 100%; padding: 0.8rem; margin-top: 0.5rem; border-radius: 8px; border: 1px solid #ccc;">
+                            </div>
+                            <div>
+                                <label for="month">Month</label><br>
+                                <input id="month" type="month" style="width: 100%; padding: 0.8rem; margin-top: 0.5rem; border-radius: 8px; border: 1px solid #ccc;">
+                            </div>
+                            <div>
+                                <label for="week">Week</label><br>
+                                <input id="week" type="week" style="width: 100%; padding: 0.8rem; margin-top: 0.5rem; border-radius: 8px; border: 1px solid #ccc;">
+                            </div>
+                        </div>
+                    </fieldset>
+
+                    <fieldset style="border: 1px solid #ddd; padding: 1.5rem; border-radius: 12px; margin-bottom: 1.5rem;">
+                        <legend style="font-weight: 700; color: #00b894;">Text and Search</legend>
+                        <label for="search">Search</label><br>
+                        <input id="search" type="search" placeholder="Search the site" style="width: 100%; padding: 0.8rem; margin: 0.5rem 0 1rem 0; border-radius: 8px; border: 1px solid #ccc;">
+
+                        <label for="url">Website</label><br>
+                        <input id="url" type="url" placeholder="https://example.com" style="width: 100%; padding: 0.8rem; margin: 0.5rem 0 1rem 0; border-radius: 8px; border: 1px solid #ccc;">
+
+                        <label for="number">Number</label><br>
+                        <input id="number" type="number" min="0" max="100" placeholder="Enter a number" style="width: 100%; padding: 0.8rem; margin: 0.5rem 0 1rem 0; border-radius: 8px; border: 1px solid #ccc;">
+
+                        <label for="range">Range</label><br>
+                        <input id="range" type="range" min="0" max="10" value="5" style="width: 100%; margin: 0.8rem 0 1rem 0;">
+                    </fieldset>
+
+                    <fieldset style="border: 1px solid #ddd; padding: 1.5rem; border-radius: 12px; margin-bottom: 1.5rem;">
+                        <legend style="font-weight: 700; color: #ff7675;">Choice Controls</legend>
+                        <div style="display: grid; gap: 1rem; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));">
+                            <div>
+                                <label>Gender</label><br>
+                                <label style="display: inline-flex; align-items: center; gap: 0.5rem; margin-top: 0.5rem;"><input type="radio" name="gender" value="female"> Female</label><br>
+                                <label style="display: inline-flex; align-items: center; gap: 0.5rem;"><input type="radio" name="gender" value="male"> Male</label><br>
+                                <label style="display: inline-flex; align-items: center; gap: 0.5rem;"><input type="radio" name="gender" value="other"> Other</label>
+                            </div>
+                            <div>
+                                <label>Interests</label><br>
+                                <label style="display: inline-flex; align-items: center; gap: 0.5rem; margin-top: 0.5rem;"><input type="checkbox" name="interests" value="news"> News</label><br>
+                                <label style="display: inline-flex; align-items: center; gap: 0.5rem;"><input type="checkbox" name="interests" value="updates"> Updates</label><br>
+                                <label style="display: inline-flex; align-items: center; gap: 0.5rem;"><input type="checkbox" name="interests" value="offers"> Offers</label>
+                            </div>
+                        </div>
+                    </fieldset>
+
+                    <fieldset style="border: 1px solid #ddd; padding: 1.5rem; border-radius: 12px; margin-bottom: 1.5rem;">
+                        <legend style="font-weight: 700; color: #2d3436;">Additional Fields</legend>
+                        <label for="color">Favorite Color</label><br>
+                        <input id="color" type="color" value="#667eea" style="width: 100%; padding: 0.5rem 0; margin: 0.5rem 0 1rem 0; border: none;">
+
+                        <label for="file-upload">Upload File</label><br>
+                        <input id="file-upload" type="file" style="width: 100%; margin: 0.5rem 0 1rem 0;">
+
+                        <label for="textarea">Message</label><br>
+                        <textarea id="textarea" rows="4" placeholder="Write a message..." style="width: 100%; padding: 0.8rem; border-radius: 8px; border: 1px solid #ccc; margin: 0.5rem 0 1rem 0;"></textarea>
+
+                        <label for="datalist">Choose Option</label><br>
+                        <input id="datalist" list="options" placeholder="Type or choose" style="width: 100%; padding: 0.8rem; margin: 0.5rem 0 1rem 0; border-radius: 8px; border: 1px solid #ccc;">
+                        <datalist id="options">
+                            <option value="Option 1">
+                            <option value="Option 2">
+                            <option value="Option 3">
+                        </datalist>
+
+                        <label for="select">Select Menu</label><br>
+                        <select id="select" style="width: 100%; padding: 0.8rem; border-radius: 8px; border: 1px solid #ccc; margin: 0.5rem 0 1rem 0;">
+                            <option value="">Choose one</option>
+                            <option value="option-a">Option A</option>
+                            <option value="option-b">Option B</option>
+                            <option value="option-c">Option C</option>
+                        </select>
+                    </fieldset>
+
+                    <fieldset style="border: 1px solid #ddd; padding: 1.5rem; border-radius: 12px;">
+                        <legend style="font-weight: 700; color: #0984e3;">Form Actions</legend>
+                        <button type="submit" style="background: #00b894; color: white; border: none; padding: 0.9rem 1.5rem; border-radius: 12px; cursor: pointer; margin-right: 1rem;">Submit</button>
+                        <button type="reset" style="background: #ff7675; color: white; border: none; padding: 0.9rem 1.5rem; border-radius: 12px; cursor: pointer;">Reset</button>
+                    </fieldset>
+                </form>
+            </div>
+        </section>
+
+        <section>
+            <h2>Field Explanations</h2>
+            <div class="animal-card">
+                <p>This form demonstrates common field types found in modern HTML forms:</p>
+                <ul style="padding-left: 1rem;">
+                    <li><strong>text</strong> for general single-line input</li>
+                    <li><strong>email</strong>, <strong>tel</strong>, <strong>url</strong> for specialized contact inputs</li>
+                    <li><strong>password</strong> for secret input</li>
+                    <li><strong>number</strong>, <strong>range</strong> for numeric values</li>
+                    <li><strong>date</strong>, <strong>time</strong>, <strong>datetime-local</strong>, <strong>month</strong>, <strong>week</strong> for temporal values</li>
+                    <li><strong>radio</strong> and <strong>checkbox</strong> for exclusive and multiple choices</li>
+                    <li><strong>file</strong> for uploads, <strong>color</strong> for color selection</li>
+                    <li><strong>textarea</strong> for multi-line text</li>
+                    <li><strong>datalist</strong> and <strong>select</strong> for suggested and dropdown choices</li>
+                    <li><strong>submit</strong> and <strong>reset</strong> buttons to control form behavior</li>
+                </ul>
+                <p>Each field is wrapped in a label and grouped with fieldsets to improve accessibility and readability.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Form Field Guide. All rights reserved.</p>
+    </footer>
+
+    <script>
+        document.querySelector('form').addEventListener('submit', function(event) {
+            event.preventDefault();
+            alert('Form submitted! This demo highlights how each field works.');
+        });
+    </script>
+</body>
+</html>
