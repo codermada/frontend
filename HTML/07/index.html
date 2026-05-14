@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="HTML list elements demonstration">
+    <title>HTML Lists - UL, OL, DL</title>
+    <link rel="stylesheet" href="../../CSS/style.css">
+</head>
+<body>
+    <header>
+        <h1>📋 HTML Lists</h1>
+        <p>Mastering unordered, ordered, and description lists</p>
+    </header>
+
+    <main>
+        <section>
+            <h2>Unordered Lists - UL</h2>
+
+            <div class="animal-card">
+                <h3>🔸 Unordered List (UL)</h3>
+                <p>Perfect for items where order doesn't matter:</p>
+                <ul style="background: #f8f9ff; padding: 1.5rem; border-radius: 8px; margin: 1rem 0; border-left: 4px solid #667eea;">
+                    <li style="margin-bottom: 0.5rem;">Apples</li>
+                    <li style="margin-bottom: 0.5rem;">Bananas</li>
+                    <li style="margin-bottom: 0.5rem;">Oranges</li>
+                    <li style="margin-bottom: 0.5rem;">Grapes</li>
+                </ul>
+                <p><em>Uses bullet points by default</em></p>
+            </div>
+        </section>
+
+        <section>
+            <h2>Ordered Lists - OL</h2>
+
+            <div class="animal-card">
+                <h3>🔢 Ordered List (OL)</h3>
+                <p>Ideal for step-by-step instructions or ranked items:</p>
+                <ol style="background: #f8f9ff; padding: 1.5rem; border-radius: 8px; margin: 1rem 0; border-left: 4px solid #764ba2;">
+                    <li style="margin-bottom: 0.5rem;">Wash your hands</li>
+                    <li style="margin-bottom: 0.5rem;">Gather ingredients</li>
+                    <li style="margin-bottom: 0.5rem;">Mix ingredients</li>
+                    <li style="margin-bottom: 0.5rem;">Bake at 350°F</li>
+                </ol>
+                <p><em>Automatically numbers items sequentially</em></p>
+            </div>
+        </section>
+
+        <section>
+            <h2>Description Lists - DL</h2>
+
+            <div class="animal-card">
+                <h3>📖 Description List (DL)</h3>
+                <p>Perfect for terms and their definitions:</p>
+                <dl style="background: #f8f9ff; padding: 1.5rem; border-radius: 8px; margin: 1rem 0; border-left: 4px solid #667eea;">
+                    <dt style="font-weight: bold; color: #667eea; margin-bottom: 0.5rem;">HTML</dt>
+                    <dd style="margin-bottom: 1rem; margin-left: 1rem;">HyperText Markup Language - the standard markup language for web pages</dd>
+
+                    <dt style="font-weight: bold; color: #667eea; margin-bottom: 0.5rem;">CSS</dt>
+                    <dd style="margin-bottom: 1rem; margin-left: 1rem;">Cascading Style Sheets - used to describe the presentation of a document</dd>
+
+                    <dt style="font-weight: bold; color: #667eea; margin-bottom: 0.5rem;">JavaScript</dt>
+                    <dd style="margin-bottom: 1rem; margin-left: 1rem;">A programming language that enables interactive web pages</dd>
+                </dl>
+                <p><em>Uses DT (definition term) and DD (definition description)</em></p>
+            </div>
+        </section>
+
+        <section>
+            <h2>Nested Lists</h2>
+
+            <div class="animal-card">
+                <h3>🔀 Combining List Types</h3>
+                <p>You can nest different list types:</p>
+                <ul style="background: #f8f9ff; padding: 1.5rem; border-radius: 8px; margin: 1rem 0; border-left: 4px solid #764ba2;">
+                    <li style="margin-bottom: 1rem;">
+                        Fruits
+                        <ol style="margin-top: 0.5rem; margin-left: 1.5rem;">
+                            <li>Apple</li>
+                            <li>Banana</li>
+                            <li>Orange</li>
+                        </ol>
+                    </li>
+                    <li style="margin-bottom: 1rem;">
+                        Vegetables
+                        <ul style="margin-top: 0.5rem; margin-left: 1.5rem;">
+                            <li>Carrot</li>
+                            <li>Broccoli</li>
+                            <li>Spinach</li>
+                        </ul>
+                    </li>
+                </ul>
+                <p><em>Mix and match list types for complex structures</em></p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 HTML Lists Guide. All rights reserved.</p>
+    </footer>
+
+    <script src="../../JS/script.js"></script>
+</body>
+</html>

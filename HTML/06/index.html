@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Understanding HTML span and div elements">
+    <title>Span vs Div - HTML Elements</title>
+    <link rel="stylesheet" href="../../CSS/style.css">
+</head>
+<body>
+    <header>
+        <h1>📦 Span vs Div</h1>
+        <p>Understanding inline and block elements in HTML</p>
+    </header>
+
+    <main>
+        <section>
+            <h2>Inline Elements - Span</h2>
+
+            <div class="animal-card">
+                <h3>🔹 Span Elements</h3>
+                <p>Span elements are <strong>inline</strong> elements that flow within text:</p>
+                <div style="background: #f0f1ff; padding: 1rem; border-radius: 8px; margin: 1rem 0; border-left: 4px solid #667eea;">
+                    <span style="background: #ffeaa7; padding: 0.2rem 0.5rem; border-radius: 4px; margin: 0.2rem;">inline</span>
+                    <span style="background: #ffeaa7; padding: 0.2rem 0.5rem; border-radius: 4px; margin: 0.2rem;">inline</span>
+                    <span style="background: #ffeaa7; padding: 0.2rem 0.5rem; border-radius: 4px; margin: 0.2rem;">inline</span>
+                </div>
+                <p><em>Spans flow horizontally and don't create line breaks.</em></p>
+            </div>
+        </section>
+
+        <section>
+            <h2>Block Elements - Div</h2>
+
+            <div class="animal-card">
+                <h3>🔲 Div Elements</h3>
+                <p>Div elements are <strong>block</strong> elements that create new lines:</p>
+                <div style="background: #f0f1ff; padding: 1rem; border-radius: 8px; margin: 1rem 0; border-left: 4px solid #764ba2;">
+                    <div style="background: #a29bfe; padding: 0.5rem; border-radius: 4px; margin: 0.5rem 0; color: white;">block</div>
+                    <div style="background: #a29bfe; padding: 0.5rem; border-radius: 4px; margin: 0.5rem 0; color: white;">block</div>
+                    <div style="background: #a29bfe; padding: 0.5rem; border-radius: 4px; margin: 0.5rem 0; color: white;">block</div>
+                </div>
+                <p><em>Divs create full-width blocks and force line breaks.</em></p>
+            </div>
+        </section>
+
+        <section>
+            <h2>Practical Usage</h2>
+
+            <div class="animal-card">
+                <h3>🎯 When to Use Each</h3>
+                <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
+                    <div style="flex: 1; min-width: 250px;">
+                        <h4 style="color: #667eea;">Use Span for:</h4>
+                        <ul style="padding-left: 1rem;">
+                            <li>Styling parts of text</li>
+                            <li>Inline formatting</li>
+                            <li>Small content changes</li>
+                            <li>Icon placement</li>
+                        </ul>
+                    </div>
+                    <div style="flex: 1; min-width: 250px;">
+                        <h4 style="color: #764ba2;">Use Div for:</h4>
+                        <ul style="padding-left: 1rem;">
+                            <li>Page layout sections</li>
+                            <li>Grouping content</li>
+                            <li>CSS styling containers</li>
+                            <li>Full-width elements</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 HTML Elements Guide. All rights reserved.</p>
+    </footer>
+
+    <script src="../../JS/script.js"></script>
+</body>
+</html>
