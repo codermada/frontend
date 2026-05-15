@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>CSS Selectors Practice</title>
+  </head>
+
+  <body>
+
+    <header id="main-header">
+      <h1>CSS Selectors Playground</h1>
+      <p class="subtitle">Try learning every selector here</p>
+    </header>
+
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="https://example.com">External Link</a>
+    </nav>
+
+    <main>
+
+      <section class="box">
+        <h2>Basic Selectors</h2>
+        <p>This is a paragraph</p>
+        <p class="highlight">This is a highlighted paragraph</p>
+        <p id="special">This uses an ID</p>
+      </section>
+
+      <section class="box">
+        <h2>Nested Elements</h2>
+        <p>Paragraph with <em>emphasized text</em> inside</p>
+        <div>
+          <p>Inside div <em>nested em</em></p>
+        </div>
+      </section>
+
+      <section class="box">
+        <h2>Lists (first-child, nth-child)</h2>
+        <ul>
+          <li>Item 1</li>
+          <li>Item 2</li>
+          <li>Item 3</li>
+          <li>Item 4</li>
+        </ul>
+      </section>
+
+      <section class="box">
+        <h2>Forms (focus, attribute selectors)</h2>
+
+        <input type="text" placeholder="Text input">
+        <input type="password" placeholder="Password">
+
+        <button class="btn">Hover me</button>
+      </section>
+
+      <section class="box">
+        <h2>Pseudo Elements</h2>
+        <p class="quote">CSS is powerful</p>
+      </section>
+
+    </main>
+
+    <footer>
+      <p>Footer content here</p>
+    </footer>
+
+  </body>
+</html>

@@ -1,0 +1,166 @@
+/* =========================
+   GLOBAL
+========================= */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background: #f4f4f4;
+}
+
+/* =========================
+   HEADER
+========================= */
+#main-header {
+  background: #222;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+.subtitle {
+  color: #aaa;
+}
+
+/* =========================
+   NAVIGATION
+========================= */
+nav {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  background: #444;
+  padding: 10px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+}
+
+/* hover */
+nav a:hover {
+  color: yellow;
+}
+
+/* attribute selector */
+a[href^="https"] {
+  color: lightgreen;
+}
+
+/* =========================
+   BOX SECTIONS
+========================= */
+.box {
+  background: white;
+  margin: 20px;
+  padding: 15px;
+  border-radius: 8px;
+}
+
+/* =========================
+   BASIC SELECTORS
+========================= */
+p {
+  color: #333;
+}
+
+.highlight {
+  color: green;
+  font-weight: bold;
+}
+
+#special {
+  color: red;
+}
+
+/* =========================
+   DESCENDANT SELECTOR
+========================= */
+p em {
+  color: blue;
+  font-style: italic;
+}
+
+/* =========================
+   CHILD SELECTOR
+========================= */
+div > p {
+  background: #e0e0ff;
+}
+
+/* =========================
+   LIST SELECTORS
+========================= */
+li:first-child {
+  color: red;
+}
+
+li:last-child {
+  color: blue;
+}
+
+li:nth-child(2) {
+  background: yellow;
+}
+
+li:nth-child(odd) {
+  background: #eee;
+}
+
+/* =========================
+   INPUT STATES
+========================= */
+input {
+  display: block;
+  margin: 10px 0;
+  padding: 8px;
+}
+
+input:focus {
+  border: 2px solid blue;
+  outline: none;
+}
+
+/* =========================
+   BUTTON INTERACTIONS
+========================= */
+.btn {
+  padding: 10px;
+  border: none;
+  background: #333;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: green;
+  transform: scale(1.1);
+}
+
+.btn:active {
+  transform: scale(0.95);
+}
+
+/* =========================
+   PSEUDO ELEMENTS
+========================= */
+.quote::before {
+  content: "❝ ";
+  font-size: 20px;
+}
+
+.quote::after {
+  content: " ❞";
+  font-size: 20px;
+}
+
+/* =========================
+   FOOTER
+========================= */
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #222;
+  color: white;
+}
