@@ -1,0 +1,86 @@
+/* =========================
+   GLOBAL STYLE
+========================= */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background: #f5f5f5;
+}
+
+.header {
+  background: #222;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+/* =========================
+   BOX LAYOUT
+========================= */
+.box {
+  background: white;
+  margin: 20px;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+/* =========================
+   PX DEMO (fixed size)
+========================= */
+.px-text {
+  font-size: 20px; /* fixed */
+}
+
+.px-child {
+  width: 200px;
+  height: 100px;
+  background: lightblue;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* =========================
+   EM DEMO (relative to parent)
+========================= */
+.em-box {
+  font-size: 16px; /* base */
+}
+
+.em-text {
+  font-size: 2em; /* 2 × parent */
+  color: green;
+}
+
+.em-parent {
+  font-size: 1.5em; /* grows relative to body */
+  background: #e0ffe0;
+  padding: 10px;
+}
+
+.em-child {
+  font-size: 1.2em; /* relative to parent */
+  background: #b2f5b2;
+  padding: 10px;
+  margin-top: 10px;
+}
+
+/* =========================
+   % DEMO (relative to parent width)
+========================= */
+.percent-container {
+  width: 100%;
+  height: 100px;
+  background: #ddd;
+  position: relative;
+}
+
+.percent-child {
+  width: 50%; /* half of parent */
+  height: 100%;
+  background: orange;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

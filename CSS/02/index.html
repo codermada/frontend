@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>CSS Units Demo</title>
+  </head>
+
+  <body>
+
+    <header class="header">
+      <h1>CSS Size Units Demo</h1>
+      <p>px vs em vs % explained visually</p>
+    </header>
+
+    <main>
+
+      <!-- PX -->
+      <section class="box px-box">
+        <h2>PX (pixels)</h2>
+        <p class="px-text">This text uses fixed px size</p>
+        <div class="px-child">Fixed box size in px</div>
+      </section>
+
+      <!-- EM -->
+      <section class="box em-box">
+        <h2>EM (relative to parent)</h2>
+        <p class="em-text">This text uses em units</p>
+
+        <div class="em-parent">
+          Parent (1.5em base)
+          <div class="em-child">Child grows based on parent</div>
+        </div>
+      </section>
+
+      <!-- % -->
+      <section class="box percent-box">
+        <h2>% (percentage)</h2>
+
+        <div class="percent-container">
+          <div class="percent-child">50% width</div>
+        </div>
+      </section>
+
+    </main>
+
+  </body>
+</html>
