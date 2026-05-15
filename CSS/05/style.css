@@ -1,0 +1,118 @@
+/* GLOBAL */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background: #f4f4f4;
+}
+
+.box {
+  background: white;
+  margin: 20px;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+/* =========================
+   1. OVERFLOW
+========================= */
+.overflow-wrapper {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+/* shared box style */
+.overflow-box {
+  width: 200px;
+  height: 120px;
+  background: #ddd;
+  border: 2px solid black;
+  padding: 10px;
+}
+
+/* ❌ BAD: hidden overflow */
+.overflow-box.bad {
+  overflow: hidden;
+}
+
+/* ✅ FIX: auto overflow (scroll when needed) */
+.overflow-box.good {
+  overflow: auto;
+}
+
+
+/* =========================
+   2. Z-INDEX STACKING
+========================= */
+.z-container {
+  position: relative;
+  height: 120px;
+}
+
+.box-a,
+.box-b {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.box-a {
+  background: red;
+  left: 20px;
+  z-index: 1;
+}
+
+.box-b {
+  background: blue;
+  left: 60px;
+  top: 20px;
+  z-index: 2;
+}
+
+/* =========================
+   3. MARGIN COLLAPSE
+========================= */
+.margin-parent {
+  background: #eee;
+  margin-top: 20px;
+}
+
+.margin-child {
+  margin-top: 40px;
+  background: lightgreen;
+  padding: 10px;
+}
+
+/* =========================
+   4. CLIPPING
+========================= */
+.clip-parent {
+  height: 120px;
+  overflow: hidden;
+  background: #fafafa;
+}
+
+.big-box {
+  height: 200px;
+  background: orange;
+}
+
+/* =========================
+   5. FIXED OVERLAY
+========================= */
+.overlay {
+  position: fixed;
+  bottom: 10px;
+  left: 10px;
+
+  background: black;
+  color: white;
+  padding: 10px;
+
+  z-index: 9999;
+}
+

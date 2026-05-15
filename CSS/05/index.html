@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>CSS Edge Cases Demo</title>
+  </head>
+
+  <body>
+    <header class="box">
+      <h1>CSS Edge Cases</h1>
+      <p>Overflow, z-index, collapse, clipping, stacking issues</p>
+    </header>
+
+    <main>
+      <!-- OVERFLOW -->
+      <section class="box">
+        <h2>1. Overflow problem vs fix</h2>
+
+        <div class="overflow-wrapper">
+          <div class="overflow-box bad">
+            ❌ overflow: hidden (content is cut and disappears)
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum necessitatibus, ea earum sed fuga recusandae at? Facilis libero, impedit perspiciatis veniam quam accusamus architecto sit molestiae dicta voluptatum aliquam nostrum!
+          </div>
+
+          <div class="overflow-box good">
+            ✅ overflow: auto (scroll appears when needed)
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex maxime, excepturi id ipsum officiis rerum praesentium ipsa culpa est, magni earum! Nam eos aliquam consequatur facere nihil aliquid reprehenderit provident!
+          </div>
+        </div>
+      </section>
+
+      <!-- Z-INDEX -->
+      <section class="box">
+        <h2>2. z-index stacking</h2>
+
+        <div class="z-container">
+          <div class="box-a">A</div>
+          <div class="box-b">B</div>
+        </div>
+      </section>
+
+      <!-- COLLAPSING MARGIN -->
+      <section class="box">
+        <h2>3. Margin collapse</h2>
+
+        <div class="margin-parent">
+          <div class="margin-child">Child with margin</div>
+        </div>
+      </section>
+
+      <!-- CLIPPING -->
+      <section class="box clip-parent">
+        <h2>4. Clipping content</h2>
+
+        <div class="big-box">I might be cut off</div>
+      </section>
+
+      <!-- FIXED OVERLAY -->
+      <div class="overlay">I'm a fixed overlay</div>
+    </main>
+  </body>
+</html>
