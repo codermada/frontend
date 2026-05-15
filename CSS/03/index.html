@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>CSS Position Demo</title>
+  </head>
+
+  <body>
+
+    <!-- FIXED -->
+    <header class="fixed-header">
+      FIXED HEADER (stays on top)
+    </header>
+
+    <main>
+
+      <!-- STATIC -->
+      <section class="box">
+        <h2>Static (default)</h2>
+        <p>No positioning applied here.</p>
+      </section>
+
+      <!-- RELATIVE -->
+      <section class="box">
+        <h2>Relative</h2>
+        <div class="relative-box">I move but keep my space</div>
+      </section>
+
+      <!-- ABSOLUTE -->
+      <section class="box parent-relative">
+        <h2>Absolute inside relative parent</h2>
+        <div class="absolute-box">I'm absolute</div>
+      </section>
+
+      <!-- STICKY -->
+      <section class="box">
+        <h2 class="sticky-title">Sticky Title (scroll down)</h2>
+        <p>Scroll to see me stick.</p>
+
+        <div class="scroll-space"></div>
+      </section>
+
+    </main>
+
+  </body>
+</html>
