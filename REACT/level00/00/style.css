@@ -1,0 +1,20 @@
+.list-item {
+    background-color: lightblue;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 5px;
+}
+.list-item:hover {
+    background-color: lightcoral;
+    cursor: pointer;
+}
+.add-button {
+    background-color: lightgreen;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.add-button:hover {
+    background-color: lightseagreen;
+}
