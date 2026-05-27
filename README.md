@@ -13,3 +13,7 @@ https://youtu.be/qz0aGYrrlhU?si=XSjeAEaN02YC-lPS
 * React without JSX and without a Build Workflow
 
 https://youtu.be/dUlz4tc9LSo?si=4INLuquc-F6onXYe
+
+* Learn React With This ONE Project
+
+https://youtu.be/G6D9cBaLViA?si=j7EpODGBCJhNUXRw
