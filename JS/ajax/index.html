@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="button">
+        click
+    </button>
+    <button id="get-user">
+        get user
+    </button>
+    <script>
+        document.getElementById('button').addEventListener('click', loadText);
+        function loadText(){
+            let xhr = new XMLHttpRequest();
+            xhr.open('GET', 'sample.txt', true);
+            // xhr.onload = function (){
+            //     if (this.status == 200)
+            //     {
+            //         console.log(this.responseText);
+            //     }
+            // }
+            xhr.onload = function () {
+                if (this.status == 200) {
+                    console.log('loading');
+                }
+            }
+            xhr.onreadystatechange = function () {
+                if (this.readyState == 4 && this.status == 200) {
+                    console.log(this.responseText);
+                }
+            }
+            xhr.onerror = function () {
+                
+                console.log('error');
+                
+            }
+            xhr.send();
+        }
+
+        document.getElementById('get-user').addEventListener('click', loadUser);
+        function loadUser()
+        {
+            let xhr = new XMLHttpRequest();
+            xhr.open('GET', 'test.json', true);
+            xhr.onload = function () {
+                if (this.status == 200) {
+                    let user = JSON.parse(this.responseText);
+                    console.log(user.name);
+                }
+            }
+            xhr.send();
+        }
+    </script>
+</body>
+</html>

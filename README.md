@@ -17,3 +17,7 @@ https://youtu.be/dUlz4tc9LSo?si=4INLuquc-F6onXYe
 * Learn React With This ONE Project
 
 https://youtu.be/G6D9cBaLViA?si=j7EpODGBCJhNUXRw
+
+* AJAX Crash Course (Vanilla JavaScript)
+
+https://youtu.be/82hnvUYY6QA?si=vJcOuNg7CMFLZqC0
