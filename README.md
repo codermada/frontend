@@ -21,3 +21,7 @@ https://youtu.be/G6D9cBaLViA?si=j7EpODGBCJhNUXRw
 * AJAX Crash Course (Vanilla JavaScript)
 
 https://youtu.be/82hnvUYY6QA?si=vJcOuNg7CMFLZqC0
+
+* Tailwind CSS v4 for Beginners | Full Course 2026
+
+https://youtu.be/9I3JQ1q4IMk?si=TGY6XBviNIjRQxXK
