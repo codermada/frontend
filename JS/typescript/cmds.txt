@@ -3,3 +3,4 @@ tsc -v
 tsc --init
 tsc --ignoreConfig 00_hello_world.ts 
 node 00_hello_world.js
+tsc
