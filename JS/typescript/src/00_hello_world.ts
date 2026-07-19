@@ -1,2 +1,7 @@
-let hello: string = "Hello World !";
-console.log(hello);
+let hello: string = "Hello";
+
+function sayHello(name: string){
+    console.log(hello, name);
+}
+
+sayHello("John");
