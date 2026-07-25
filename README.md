@@ -29,3 +29,7 @@ https://youtu.be/9I3JQ1q4IMk?si=TGY6XBviNIjRQxXK
 * TypeScript Tutorial for Beginners
 
 https://youtu.be/d56mG7DezGs?si=OqYizvEh4eyZcdmc
+
+* React Full Course for free ⚛️
+
+https://youtu.be/CgkZ7MvWUAA?si=8wjk6P4QYf0cPuwW
