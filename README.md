@@ -33,3 +33,7 @@ https://youtu.be/d56mG7DezGs?si=OqYizvEh4eyZcdmc
 * React Full Course for free ⚛️
 
 https://youtu.be/CgkZ7MvWUAA?si=8wjk6P4QYf0cPuwW
+
+* Ultimate Tailwind CSS Tutorial // Build a Discord-inspired Animated Navbar 
+
+https://youtu.be/pfaSUYaSgRo?si=gZXJZbSVAqNfCPFu
