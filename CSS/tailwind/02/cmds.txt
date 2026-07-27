@@ -1,0 +1,2 @@
+npm create vite@latest [projectFolderName]
+npm install react-icons --save
